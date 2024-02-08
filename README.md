@@ -1,98 +1,98 @@
-# Clustering and Decision Tree Analysis on Iris Dataset
+# 🌺 Clustering and Decision Tree Analysis on Iris Dataset 🌿
 
-## Objective
+## **Objective**
 
 The goal of this notebook is to explore morphological variations within the Iris species using unsupervised machine learning techniques. This analysis aims to benefit various stakeholders, including botanists, researchers, and horticulturists, by enhancing our understanding of the diversity present in Iris flowers.
 
-## Data Import and Preliminary Analysis
+## **Data Import and Preliminary Analysis**
 
 - The dataset is imported and examined for basic statistics, class distribution, and missing values.
 - The Iris dataset comprises 150 observations with features such as sepal length, sepal width, petal length, and petal width, categorized into three species: Iris-setosa, Iris-versicolor, and Iris-virginica.
 
-### Check for Missing Values
+### **Check for Missing Values**
 
 - No missing values are found in the dataset.
 
-## Exploratory Data Analysis
+## **Exploratory Data Analysis**
 
-### Check for Outliers
+### **Check for Outliers**
 
 - Box plots are used to identify outliers in sepal and petal measurements across different Iris species.
 - Outliers are detected and subsequently handled through a combination of Winsorization and replacement with median values.
 
-### Visualization of Outlier-Handled Data
+### **Visualization of Outlier-Handled Data**
 
 - Box plots are re-visualized after handling outliers to ensure their successful removal.
 
-## Clustering Techniques
+## **Clustering Techniques**
 
-### 1. K-Means Clustering
+### **1. K-Means Clustering**
 
-#### Elbow Method
+#### **Elbow Method**
 
 - The Elbow Method is used to determine the optimal number of clusters.
 - The bend in the graph suggests three clusters.
 
-#### K-Means Training and Visualization
+#### **K-Means Training and Visualization**
 
 - The K-Means model is trained with three clusters.
 - Resulting clusters are visualized along with centroids.
 
-### 2. Hierarchical Clustering
+### **2. Hierarchical Clustering**
 
-#### Dendrogram Analysis
+#### **Dendrogram Analysis**
 
 - A dendrogram is employed to identify the optimal number of clusters.
 - The analysis supports the presence of three clusters.
 
-#### Hierarchical Clustering Training and Visualization
+#### **Hierarchical Clustering Training and Visualization**
 
 - The Hierarchical Clustering model is trained with three clusters.
 - Clusters are visualized.
 
-### 3. Gaussian Mixture Model (GMM)
+### **3. Gaussian Mixture Model (GMM)**
 
-#### BIC for GMM
+#### **BIC for GMM**
 
 - Bayesian Information Criterion (BIC) is used to choose the optimal number of components.
 - Three clusters are selected.
 
-#### GMM Training and Visualization
+#### **GMM Training and Visualization**
 
 - The GMM model is trained with three components.
 - Resulting clusters are visualized.
 
-## Decision Tree Analysis
+## **Decision Tree Analysis**
 
 - A Decision Tree is employed for classification tasks, both with and without pre-pruning.
 
-### Post-Pruning Decision Tree
+### **Post-Pruning Decision Tree**
 
 - A Decision Tree is visualized and analyzed before and after post-pruning.
 
-### Pre-Pruning Decision Tree
+### **Pre-Pruning Decision Tree**
 
 - Grid Search Cross-Validation is utilized to find optimal hyperparameters for pre-pruning the Decision Tree.
 - The pre-pruned tree is visualized and analyzed.
 
-## Conclusion
+## **Conclusion**
 
 This comprehensive analysis employs clustering techniques and Decision Tree analysis on the Iris dataset, providing valuable insights into the morphological variations of Iris flowers.
 
-____
+---
 
-## Iris Flower Prediction App Documentation
+## **🌼 Iris Flower Prediction Web App🌐**
 
-### Overview:
+### **Overview:**
 
 The Iris Flower Prediction App is a simple web application developed using Streamlit. It allows users to input measurements of an Iris flower's sepal length, sepal width, petal length, and petal width. The app then predicts the Iris species using unsupervised clustering models (K-Means and Gaussian Mixture Model) and a supervised Decision Tree classifier.
 
-### Prerequisites:
+### **Prerequisites:**
 
 - Python installed on your machine.
 - Pip (Python package installer) installed.
 
-### Installation:
+### **Installation:**
 
 1. Clone or download the repository to your local machine:
 
@@ -112,7 +112,7 @@ The Iris Flower Prediction App is a simple web application developed using Strea
    pip install -r requirements.txt
    ```
 
-### Running the App:
+### **Running the App:**
 
 1. Open your terminal or command prompt.
 
@@ -132,7 +132,7 @@ The Iris Flower Prediction App is a simple web application developed using Strea
 
 5. Open your web browser and enter the provided URL to view and interact with the Iris Flower Prediction App.
 
-### How to Use the App:
+### **How to Use the App:**
 
 1. Upon opening the app, you will see sliders in the sidebar for entering measurements.
 
@@ -144,7 +144,7 @@ The Iris Flower Prediction App is a simple web application developed using Strea
 
 5. The app provides information about the clustering predictions and the Decision Tree prediction.
 
-### Additional Information:
+### **Additional Information:**
 
 - The app uses a clean and attractive interface with custom styling for better user experience.
 
@@ -153,3 +153,5 @@ The Iris Flower Prediction App is a simple web application developed using Strea
 - The app can be customized by modifying the code, such as changing colors, adding features, or enhancing the user interface.
 
 Enjoy using the Iris Flower Prediction App!
+
+---
